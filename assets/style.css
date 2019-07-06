@@ -1,0 +1,25 @@
+.child1 {
+  background-color: green;
+  height: 60px;
+  line-height: 60px;
+}
+
+.child2 {
+  background-color:red;
+  height: 40px;
+  line-height: 40px;
+}
+
+.child1,
+.child2 {
+  width: 380px;
+  text-align: center;
+  color: white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
