@@ -1,6 +1,6 @@
 :root {
-  --sco-orange:#DE7E2A;
-  --sco-orange-hover:#e48b3e;
+  --sco-orange:#DDBB50;
+  --sco-orange-hover:#f0cc58;
   --sco-dark: #1A1A1A;
   --sco-dark-hover: rgb(53, 53, 53);
   --sco-light-grey: #F8F8F8;
@@ -111,9 +111,13 @@ header {
   z-index: 10;
 }
 
-.navigation .logo {
-  height: 40px;
-  width: 150px;
+.logo {
+  height: 60px;
+  width: 180px;
+}
+
+.navigation .logo img {
+  width: 100%;
 }
 
 .menu ul li {
@@ -175,7 +179,7 @@ header {
 
 header .white__block {
   z-index: 1;
-  margin-top: -340px;
+  margin-top: -360px;
   width: 960px;
   height: 450px;
   background-color: var(--sco-clean);
