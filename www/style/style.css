@@ -463,7 +463,6 @@ footer {
   }
 
   .white__block,
-  .hero-image__wrapper,
   .navigation .menu {
     display: none;
   }
@@ -471,6 +470,15 @@ footer {
   .logo {
     margin: 0 auto;
     margin-top: 16px;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .hero-image__wrapper {
+    width: 100%;
+    border-radius: 2px;
   }
 
   .hero-content {
@@ -489,7 +497,7 @@ footer {
   .hero .baseline {
     text-align: center;
     margin-top: 0;
-    margin-bottom: 56px;
+    margin-bottom: 48px;
   }
 
   .scroll__wrapper {
