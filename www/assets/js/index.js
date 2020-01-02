@@ -17,7 +17,12 @@ const app = (function() {
   }
 
   const sendEmail = () => {
-    window.location.href = `mailto:${emailContact}?subject=Demande d'information`;
+    const subject = getSubject(event);
+    window.location.href = `mailto:${emailContact}?subject=${subject}`;
+  }
+
+  const getSubject = (event) => {
+    return event.target.dataset.offer || `Demande d'informaton`;
   }
 
   const addClassOnScoll = () => {

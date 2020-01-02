@@ -4,10 +4,11 @@
   --sco-dark: #1A1A1A;
   --sco-dark-hover: rgb(53, 53, 53);
   --sco-light-grey: #F8F8F8;
+  --sco-light-grey-cards: rgb(230, 230, 230);
   --sco-light-silver: #BFBFBF;
   --sco-text: #707070;
   --sco-clean: #FFF;
-  --block-margin-bottom: 192px;
+  --block-margin-bottom: 160px;
   --large-desktop: 1440px;
 }
 
@@ -245,6 +246,20 @@ section .baseline {
   margin-bottom: 96px;
 }
 
+section .section-footer {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+
+section .section-footer p {
+  padding: 0;
+  margin: 0;
+}
+section .section-footer span {
+  display: block;
+}
+
 /* 
 ################## ABOUT US #####################
 */
@@ -358,6 +373,89 @@ p {
   width: 245px;
 }
 
+/* 
+################## PLAN PRICES #####################
+*/
+
+.cards {
+  width: 1024px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.column {
+  width: 32%;
+}
+
+.titles {
+  width: 25%;
+}
+
+.titles .cell:not(:first-child) {
+  background-color: var(--sco-light-grey-cards);
+}
+
+.column .cell {
+  height: 72px;
+  border-bottom: 1px solid var(--sco-clean);
+  font-size: 13px;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.column .cell:last-child {
+  border: none;
+}
+
+.column .cell-head {
+  min-height: 96px;
+}
+
+.cell-head:first-child {
+  justify-content: flex-start;
+}
+
+.cell-head h3{
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.price__wrapper .price {
+  display: block;
+  font-size: 16px;
+}
+
+.text-left-cell {
+  text-align: left;
+  padding-left: 8px;
+}
+
+.check {
+  width: 21px;
+  height: 21px;
+}
+
+.small {
+  font-size: 11px;
+  height: 12px;
+  line-height: 12px;
+}
+
+.icon-rotate {
+  display: none;
+  opacity: .4;
+}
+
+.icon__wrapper {
+  margin: 0 auto;
+  height: 128px;
+  width: 128px;
+  margin-bottom: 16px;
+}
 
 /* 
 ################## GALLERY #####################
@@ -565,6 +663,18 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 16px;
   }
+
+  #prices .cards {
+    display: none;
+  }
+
+  #prices .icon-rotate {
+    display: block;
+  }
+
+  #prices .section-footer, #prices .section-intro {
+    display: none;
+  }
  }
 
 
@@ -625,6 +735,22 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     grid-gap: 16px;
+  }
+
+  #prices .cards {
+    width: 640px;
+  }
+
+  #prices .column .cell-head h3{
+    font-size: 16px;
+  }
+
+  #prices .column .cell-head .price{
+    font-size: 12px;
+  }
+
+  #prices .column .cell {
+    height: 100px;
   }
 }
 
